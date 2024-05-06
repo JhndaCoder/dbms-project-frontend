@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --titleFont: 'Bebas Neue', sans-serif;
+  --textFont: 'Montserrat', sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+  -moz-window-dragging: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.title {
+  font-family: var(--titleFont);
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.text {
+  font-family: var(--textFont);
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--titleFont);
+  font-weight: 400;
+  letter-spacing: 1.25px;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+
+.hero {
+  background: url('./assets/background.svg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.hero-title {
+  color: #3B3B3B;
+  font-size: 13vh;
+  margin-bottom: 2rem;
+}
+
+.hero-main-wrapper {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero-main {
+  background: #ECF0F3;
+  box-shadow: -13.3826px -11.1521px 27.8803px #FAFBFF, 11.1521px 11.1521px 27.8803px rgba(22, 27, 29, 0.25);
+  border-radius: 40px;
+  padding: 1rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.hero-main span,
+.hero-main p {
+  font-family: var(--titleFont);
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.hero-main p {
+  font-family: var(--textFont) !important;
+  font-weight: 500 !important;
+}
+
+.hero-main{
+  margin: 2rem 1rem;
+}
+
+h1{
+  padding-left: 2rem;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: 1px solid #667085;
+  border-radius: 2px;
+  padding: 0.5rem;
+  font-family: var(--textFont);
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: #3B3B3B99;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+button {
+  background: linear-gradient(90deg, #745AC3 66.98%, rgba(248, 138, 176, 0.8) 100%);
+  box-shadow: 8.75205px 9.62725px 26.2561px rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 4.37602px;
+  border: none;
+  padding: 0.25rem 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  font-family: var(--titleFont);
+  font-weight: 200 !important;
+}
